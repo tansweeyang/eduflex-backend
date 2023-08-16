@@ -1,10 +1,13 @@
 package com.eduflex.eduflexbackend;
 
-import com.eduflex.eduflexbackend.model.Attendance;
-import com.eduflex.eduflexbackend.model.Subject;
-import com.eduflex.eduflexbackend.repository.AttendanceRepository;
-import com.eduflex.eduflexbackend.service.AttendanceService;
-import com.eduflex.eduflexbackend.service.SubjectService;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import java.util.Date;
+import java.util.List;
+
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -12,11 +15,11 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Date;
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import com.eduflex.eduflexbackend.model.Attendance;
+import com.eduflex.eduflexbackend.model.Subject;
+import com.eduflex.eduflexbackend.repository.AttendanceRepository;
+import com.eduflex.eduflexbackend.service.AttendanceService;
+import com.eduflex.eduflexbackend.service.SubjectService;
 
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
