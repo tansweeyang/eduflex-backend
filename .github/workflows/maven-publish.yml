@@ -5,9 +5,9 @@ name: eduflex cicd flow
 
 on:
   push:
-    braches: [ main ]
+    branches: [ main ]
   pull_request:
-    braches: [ main ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -16,8 +16,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-
-    
 
     steps:
     - name : Checkout
