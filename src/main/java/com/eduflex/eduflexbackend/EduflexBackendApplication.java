@@ -9,5 +9,3 @@ public class EduflexBackendApplication {
         SpringApplication.run(EduflexBackendApplication.class, args);
     }
 }
-
-// Test commit
