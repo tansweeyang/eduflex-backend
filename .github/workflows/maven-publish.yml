@@ -4,8 +4,10 @@
 name: eduflex cicd flow
 
 on:
-  release:
-    types: [created]
+  push:
+    braches: [ main ]
+  pull_request:
+    braches: [ main ]
 
 jobs:
   build:
