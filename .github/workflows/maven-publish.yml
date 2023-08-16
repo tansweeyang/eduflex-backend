@@ -26,11 +26,7 @@ jobs:
       with:
         java-version: '18'
         distribution: 'temurin'
-
-    - name: Restore Maven cache
-      uses: tansweeyang/maven-cache-github-action@v1
-      with:
-        step: restore    
+        cache: maven
 
     - name: Build with Maven
       run: mvn clean install
