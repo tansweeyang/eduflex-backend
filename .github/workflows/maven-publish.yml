@@ -29,7 +29,7 @@ jobs:
     - name: Compile with Maven
       run: mvn clean compile
 
-    - name: Build with Maven
+    - name: Testing with Maven
       run: mvn clean test
 
     - name: Publish to Maven repository
